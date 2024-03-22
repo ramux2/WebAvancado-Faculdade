@@ -13,23 +13,23 @@
     </header>
     <body onload="init()">
         <div class="race-track">
-            <div class="car" id="car1"></div>
-            <div class="car" id="car2"></div>
-            <div class="car" id="car3"></div>
-            <div class="car" id="car4"></div>
-            <div class="car" id="car5"></div>
+            <div class="car" id="Ferrari"></div>
+            <div class="car" id="McLaren"></div>
+            <div class="car" id="RedBull"></div>
+            <div class="car" id="Mecedes"></div>
+            <div class="car" id="Aston-Martin"></div>
             <div class="finalLine"></div>
         </div>
         <label for="">Digite o valor da sua aposta</label>
         <input id="amountInput" type="number" placeholder="Valor mínimo de R$ 5" min="5">
-        <button onclick="startRace()">APOSTAR</button>
+        <button onclick="bet()">APOSTAR</button>
         <section>
-            <select name="select">
-                <option value="value1">Ferrari</option>
-                <option value="value2" selected>McLaren</option>
-                <option value="value3">RedBull Racing</option>
-                <option value="value4">Merces</option>
-                <option value="value5">Aston Marting</option>
+            <select name="select" id="drivers-list">
+                <option value="Ferrari">Ferrari</option>
+                <option value="McLaren" selected>McLaren</option>
+                <option value="RedBull">RedBull Racing</option>
+                <option value="Mecedes">Mercedes</option>
+                <option value="Aston-Martin">Aston Martin</option>
               </select>
         </section>
     </body>
